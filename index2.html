@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>morec on css selectors</title>
+    <style>
+        /* .box::first-line{ */
+            /* color: yellow; */
+            
+        /* } */
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black; 
+            padding: 5px;
+            margin: 5px;
+        }
+       p, a, .box, [data-color="primary"]{
+            padding-top: 45px;
+            margin-top: 20px; */
+/*         
+        .box:nth-child(even){
+            background-color: aqua;
+        } */
+         /* .box:nth-last-child(2){
+            background-color: red;
+         } */
+       .boxes::before{
+        content: "goutam is good";
+        
+        
+       }
+       .boxes::after{
+         content: "sigma web development";
+         color: blueviolet;
+       }
+       /* content::first-letter{
+        color: blueviolet;
+       } */
+       .box::first-letter{
+        color: blue;
+        font-size: 45px;
+       }
+        input::placeholder{
+            color: blue;
+            font-size: 20px;
+
+        }
+       
+    </style>
+</head> 
+<body>
+    <div class="boxes">
+        <div data-color="primary"   =""="box"> hey am a first box <div>
+        <div class="box"> hey i am a box</div>
+        <div  class="box"> hey i am a box</div>
+        <input type="text" placeholder="type your name">
+    </div>
+</body>
+</html>
